@@ -30,3 +30,5 @@ print('Второе число наоборот: ', revers_number_K)
 
 summa_revers_numbers = revers_number_N + revers_number_K
 print('Сумма: ', summa_revers_numbers)
+
+# TODO Есть недочеты в форматировании по PEP8, используйте пункт меню в пайчарме

@@ -12,3 +12,6 @@ while number_N <= 1:
     number_N = int(input('Введите натуральное число N, больше единицы: '))
 
 smallest_divisor_number(number_N)
+
+
+# TODO Есть недочеты в форматировании по PEP8, используйте пункт меню в пайчарме

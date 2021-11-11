@@ -17,3 +17,11 @@ print('Сумма цифр числа равна: ', summa_numbers(number_N))
 print('Количество цифр в числе равна: ', counts_number(number_N))
 difference_summy_quantity = summa_numbers(number_N) - counts_number(number_N)
 print('Разность суммы и количества цифр: ', difference_summy_quantity)
+
+
+# Начиная с этого модуля буду обращать внимание на то что подчеркивает Пайчар. Придерживаемся PEP8
+# Можно привести все к нужному формату code\Reformat code
+
+# TODO Есть недочеты в форматировании по PEP8, используйте пункт меню в пайчарме
+
+# TODO функции в принте не вызываем и не делаем вычислений
