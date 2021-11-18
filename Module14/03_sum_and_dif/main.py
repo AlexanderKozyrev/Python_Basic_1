@@ -7,12 +7,11 @@ def summa_numbers(number):
 
 
 def counts_number(number):
-    # TODO применить рекомендации на счет num
-    counts_num = 0
+    quantity_numbers = 0
     while number != 0:
         number = number // 10
-        counts_num += 1
-    return counts_num
+        quantity_numbers += 1
+    return quantity_numbers
 
 
 number_N = int(input('Введите целое положительное число: '))
@@ -21,5 +20,4 @@ print('Сумма цифр числа равна: ', summa_numbers_number)
 counts_numbers_number = counts_number(number_N)
 print('Количество цифр в числе равна: ', counts_numbers_number)
 difference_summa_quantity = summa_numbers_number - counts_numbers_number
-# TODO нет такой переменной
-print('Разность суммы и количества цифр: ', difference_summy_quantity)
+print('Разность суммы и количества цифр: ', difference_summa_quantity)
