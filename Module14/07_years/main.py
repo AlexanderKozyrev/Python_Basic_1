@@ -5,7 +5,7 @@ def three_identical_numbers(number):
     number_1 = number // 1000
 
     if (number_1 == number_2 == number_3 or number_1 == number_2 == number_4 or number_1 == number_3 == number_4
-        or number_2 == number_3 == number_4):
+            or number_2 == number_3 == number_4):
         print(number)
 
 
@@ -16,3 +16,4 @@ while years_one != years_two:
     three_identical_numbers(years_one)
     years_one += 1
 
+# зачет!

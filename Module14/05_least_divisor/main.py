@@ -12,3 +12,5 @@ while number_N <= 1:
 
 smallest_divisor_number(number_N)
 
+
+# зачет!
