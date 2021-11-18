@@ -21,3 +21,6 @@ counts_numbers_number = counts_number(number_N)
 print('Количество цифр в числе равна: ', counts_numbers_number)
 difference_summa_quantity = summa_numbers_number - counts_numbers_number
 print('Разность суммы и количества цифр: ', difference_summa_quantity)
+
+
+# зачет!
