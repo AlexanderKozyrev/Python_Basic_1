@@ -7,6 +7,7 @@ y2 = float(input('Y: '))
 x_diff = x1 - x2
 y_diff = y1 - y2
 if x_diff == 0:
+    # TODO по рекомендация должно быть решение x = x1
     print('Нет решения')
 elif y_diff == 0:
     print("Уравнение прямой, проходящей через эти точки:")
