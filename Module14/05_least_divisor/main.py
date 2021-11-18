@@ -5,7 +5,6 @@ def smallest_divisor_number(number):
     print('Наименьший делитель, отличный от единицы: ', smallest_divisor)
 
 
-
 number_N = int(input('Введите натуральное число N, больше единицы: '))
 while number_N <= 1:
     print('Вы ввели неправильное число, попробуйте еще раз!')
@@ -13,5 +12,3 @@ while number_N <= 1:
 
 smallest_divisor_number(number_N)
 
-
-# TODO Есть недочеты в форматировании по PEP8, используйте пункт меню в пайчарме

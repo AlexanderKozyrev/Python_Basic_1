@@ -9,7 +9,7 @@ def three_identical_numbers(number):
         print(number)
 years_one = int(input('Введите первый год: '))
 years_two = int(input('Введите второй год: '))
-print('Года от ',years_one, 'до ', years_two, 'с тремя одинаковыми цифрами: ')
+print('Года от ', years_one, 'до ', years_two, 'с тремя одинаковыми цифрами: ')
 while years_one != years_two:
     three_identical_numbers(years_one)
     years_one += 1
