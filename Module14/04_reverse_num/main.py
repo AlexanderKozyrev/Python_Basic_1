@@ -7,6 +7,7 @@ def coup_number(number):
         revers_number = revers_number + digit
     return revers_number
 
+
 number_N = float(input('Введите первое число: '))
 number_K = float(input('Введите второе число: '))
 
@@ -31,4 +32,3 @@ print('Второе число наоборот: ', revers_number_K)
 summa_revers_numbers = revers_number_N + revers_number_K
 print('Сумма: ', summa_revers_numbers)
 
-# TODO Есть недочеты в форматировании по PEP8, используйте пункт меню в пайчарме
