@@ -1,8 +1,10 @@
 
-list_names = ['Артемий', 'Борис', 'Влад', 'Гоша', 'Дима', 'Евгений', 'Женя', 'Захар']
-new_list_names = []
+number_names = ['Артемий', 'Борис', 'Влад',
+                'Гоша', 'Дима', 'Евгений', 'Женя', 'Захар']
+new_number_names = []
 
-for number in 1, 3, 5, 7:
-    new_list_names.append(list_names(number))
+for number in range(8):
+    if (number + 1) % 2 == 0:
+        new_number_names.append(number_names[number])
 
-print(new_list_names)
+print(new_number_names)
