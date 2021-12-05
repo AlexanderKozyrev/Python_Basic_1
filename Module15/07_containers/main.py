@@ -18,3 +18,5 @@ for new_number in range(number_containers):
         print('Номер, куда встанет новый контейнер: ', new_number + 1)
         break
 
+
+# TODO применить рекомендации данные ранее

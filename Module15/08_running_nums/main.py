@@ -14,3 +14,6 @@ while index < number_N - 1:
     index += 1
 
 print('Сдвинутый список: ', start_list)
+
+# TODO применить рекомендации данные ранее
+

@@ -8,3 +8,7 @@ for number in range(number_cells):
         unsuitable_values.append(effectiveness)
 
 print('Неподходящие значения', unsuitable_values)
+
+# TODO инпут не должен быть пустым
+# TODO сообщение что в принте переносим полностью в инпут
+
