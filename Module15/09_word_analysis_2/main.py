@@ -12,3 +12,4 @@ if word == opposite_word:
 else:
     print('Слово не является палиндромом')
 
+# зачет!

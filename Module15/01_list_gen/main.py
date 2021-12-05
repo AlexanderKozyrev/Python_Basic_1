@@ -6,3 +6,5 @@ for number in range(number_N + 1):
         score_odd.append(number)
 
 print(score_odd)
+
+# зачет!
