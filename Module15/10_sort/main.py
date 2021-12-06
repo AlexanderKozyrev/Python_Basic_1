@@ -1,19 +1,19 @@
 number_N = int(input("Кол-во элементов: "))
-start_list = []
+start_registry = []
 
 for _ in range(number_N):
     element = input("Введите элемент списка:")
-    start_list.append(element)
+    start_registry.append(element)
 
 for i in range(number_N - 1):
     minimum = i
 
     for j in range(i + 1, number_N):
-        if start_list[j] < start_list[minimum]:
+        if start_registry[j] < start_registry[minimum]:
             minimum = j
-    start_list[minimum], start_list[i] = start_list[i], start_list[minimum]
+    start_registry[minimum], start_registry[i] = start_registry[i], start_registry[minimum]
 
-print('Отсортированный список: ', start_list)
+print('Отсортированный список: ', start_registry)
 
 
-# TODO применить рекомендации данные ранее по неймингу
+

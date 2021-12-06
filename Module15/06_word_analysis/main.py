@@ -2,12 +2,10 @@ word = input('Введите слово: ')
 word = list(word)
 unique_letters = 0
 
-# TODO не рекомендую использовать в именовании переменных прификсы i_
-# TODO они только сбивают с толку
-for i_word in word:
+for i in word:
     coincidences = 0
-    for y_word in word:
-        if i_word == y_word:
+    for y in word:
+        if i == y:
             coincidences += 1
     if coincidences == 1:
         unique_letters += 1
