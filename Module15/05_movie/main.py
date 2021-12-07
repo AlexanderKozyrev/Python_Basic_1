@@ -8,6 +8,8 @@ while favourite_film != 'end':
     for film in films:
         if film == favourite_film:
             favourite_films.append(film)
+        else:
+            print('Ошибка, такого фильма нет')
     favourite_film = input('Введите фильм: ')
 
 print('Список любимых фильмов: ', favourite_films)
