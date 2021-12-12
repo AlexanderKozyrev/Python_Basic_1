@@ -14,6 +14,11 @@ for foot in range(number_foot):
     size_foot = int(input(f'Размер ноги {foot + 1} человека: '))
     sizes_foot.append(size_foot)
 
+for i in range(number_skates):
+    for j in range(i+1, number_skates):
+        if sizes_skates[j] < sizes_skates[i]:
+            sizes_skates[j], sizes_skates[i] = sizes_skates[i], sizes_skates[j]
+
 for size in sizes_foot:
     for skate in sizes_skates:
         if size <= skate:
