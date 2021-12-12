@@ -24,6 +24,7 @@ for size in sizes_foot:
         if size <= skate:
             people += 1
             sizes_skates.remove(skate)
+            break
 
 print()
 print('Наибольшее кол-во людей, которые могут взять ролики: ', people)
