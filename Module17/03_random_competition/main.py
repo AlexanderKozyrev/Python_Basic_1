@@ -13,3 +13,5 @@ for i in range(20):
 print('Первая команда: ', first_team)
 print('Вторая команда: ', second_team)
 print('Победителя тура: ', winners)
+
+# TODO применить рекомендации данные ранее

@@ -10,3 +10,6 @@ for i in range(number_N):
 
 print('Список до сжатия: ', before_compression)
 print('Список после сжатия: ', after_compression)
+
+# TODO применить рекомендации данные ранее
+

@@ -12,3 +12,4 @@ print('Результат: ', end='')
 for i in range(stick):
     print(sticks[i], end='')
 
+# TODO применить рекомендации данные ранее
