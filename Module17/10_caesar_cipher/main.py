@@ -1,19 +1,18 @@
-alpha = []
-for i in 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя':
-    alpha.append(i)
+alphabet = []
+for letter in 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя':
+    alphabet.append(letter)
 
 text = input('Введите сообщение: ')
 shift = int(input('Введите сдвиг: '))
-s = ''
-for i in text:
-    if i == ' ':
-        s = s + ' '
+new_text = ''
+for sign in text:
+    if sign == ' ':
+        new_text = new_text + ' '
     else:
-        k = alpha.index(i) + shift
-        if k > 32:
-            k = k - 33
-        s = s + alpha[k]
+        letter_number = alphabet.index(i) + shift
+        if letter_number > 32:
+            letter_number = letter_number - 33
+        new_text = new_text + alphabet[letter_number]
 
-print('Зашифрованное сообщение: ', s)
+print('Зашифрованное сообщение: ', new_text)
 
-# TODO применить рекомендации данные ранее

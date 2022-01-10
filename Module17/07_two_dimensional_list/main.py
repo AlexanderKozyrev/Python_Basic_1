@@ -1,9 +1,7 @@
 
-two_dimensional = [[x + 1, x + 5, x + 9] for x in range(4)]
+two_dimensional = [[number + 1, number + 5, number + 9] for number in range(4)]
 
 print(two_dimensional)
-
-# TODO применить рекомендации данные ранее
 
 
 
