@@ -1,4 +1,4 @@
-text = input('Введите текст: ')
+text = input('Введите строку: ')
 counter = 1
 print(len(text))
 for letter in range(len(text) - 1):
