@@ -17,3 +17,6 @@ for i_name in name_dict:
 for i_dict in sorted(height_dict):
     print(i_dict, height_dict[i_dict])
 
+
+# TODO применить рекомендации данные ранее
+

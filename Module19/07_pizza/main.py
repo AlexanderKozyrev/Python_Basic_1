@@ -5,3 +5,6 @@ for number in range(1, numbers + 1):
     name_dict[number] = order
 
 print(name_dict)
+
+# TODO применить рекомендации данные ранее
+

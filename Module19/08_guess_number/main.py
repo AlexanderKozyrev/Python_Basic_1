@@ -13,3 +13,6 @@ while True:
         numbers_set &= new_numbers_set
     else:
         numbers_set -= new_numbers_set
+
+# TODO применить рекомендации данные ранее
+

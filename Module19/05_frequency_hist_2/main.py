@@ -20,3 +20,5 @@ for number in original_dict.keys():
 print('Инвертированный словарь частот: ')
 for letter in inverter_dict:
     print(letter, ':', inverter_dict[letter])
+
+# TODO применить рекомендации данные ранее

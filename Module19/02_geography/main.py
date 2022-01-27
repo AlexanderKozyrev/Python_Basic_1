@@ -1,6 +1,8 @@
 numbers_countries = int(input('Количество стран: '))
+# TODO в именовании переменных не используем list set dict tuple
 countries_dict = {}
 
+# TODO не рекомендую использовать прификс i_
 for i_number in range(0, numbers_countries):
     country = input(f'{i_number + 1} страна: ').split()
     countries_dict[country[0]] = country[1:]

@@ -17,4 +17,5 @@ for song in range(numbers_songs):
     name_song = input(f'Название {song + 1} песни: ')
     songs_time += violator_songs[name_song]
 
+# TODO функции из принтов выносим
 print('Общее время звучания песен: ', round(songs_time, 2), 'минут')
