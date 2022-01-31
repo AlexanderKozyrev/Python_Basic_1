@@ -23,19 +23,17 @@ store = {
         {'quantity': 43, 'price': 97},
     ],
 }
-# TODO используем .items() у словаря и получаем сразу в заголовке цикла имя и код товара
-for good in goods:
+
+for good, code in goods.items():
     total_price = 0
     total_number = 0
+    product_parameters = {}
 
-    # TODO тут мы получаем словарь параметры_продукта из store[code] одним циклом без дополнительных условий
-
-    for i_store in store[goods[good]]:
-        total_price += j_store['quantity'] * j_store['price']
-        total_number += j_store['quantity']
+    for stores in store[code]:
+        total_number += stores['quantity']
+        total_price += stores['price'] * stores['quantity']
 
     print(good, '-', total_number, 'шт, стоимость ', total_price, 'руб')
 
 
-# TODO применить рекомендации данные ранее, + код падает
 

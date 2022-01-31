@@ -1,24 +1,23 @@
 text = input('Введите текст: ')
-original_dict = {}
-inverter_dict = {}
+original_dictionary = {}
+inverter_dictionary = {}
 
 for symbol in text:
-    if symbol in original_dict:
-        original_dict[symbol] += 1
+    if symbol in original_dictionary:
+        original_dictionary[symbol] += 1
     else:
-        original_dict[symbol] = 1
+        original_dictionary[symbol] = 1
 
 print('Оригинальный словарь частот:')
-for letter in sorted(original_dict):
-    print(letter, ':', original_dict[letter])
+for letter in sorted(original_dictionary):
+    print(letter, ':', original_dictionary[letter])
 
-for number in original_dict.keys():
-    if not original_dict[number] in inverter_dict:
-        inverter_dict[original_dict[number]] = []
-    inverter_dict[original_dict[number]].append(number)
+for number in original_dictionary.keys():
+    if not original_dictionary[number] in inverter_dictionary:
+        inverter_dictionary[original_dictionary[number]] = []
+    inverter_dictionary[original_dictionary[number]].append(number)
 
 print('Инвертированный словарь частот: ')
-for letter in inverter_dict:
-    print(letter, ':', inverter_dict[letter])
+for letter in inverter_dictionary:
+    print(letter, ':', inverter_dictionary[letter])
 
-# TODO применить рекомендации данные ранее
