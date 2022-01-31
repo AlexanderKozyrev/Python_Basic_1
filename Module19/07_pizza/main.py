@@ -1,10 +1,9 @@
 numbers = int(input('Введите количество заказов: '))
-name_dict = {}
+name_dictionary = {}
 for number in range(1, numbers + 1):
     order = input(f'{number} заказ: ').split()
-    name_dict[number] = order
+    name_dictionary[number] = order
 
-print(name_dict)
+print(name_dictionary)
 
-# TODO применить рекомендации данные ранее
 
