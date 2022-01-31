@@ -14,6 +14,7 @@ for name in name_dictionary:
         s_name = name_dictionary[s_name]
         height_dictionary[name] += 1
 
+# TODO код падает
 for dictionary in sorted(height_dictionary):
     print(dictionaryt, height_dictionary[dictionary])
 
