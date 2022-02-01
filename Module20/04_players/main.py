@@ -4,4 +4,6 @@ players = {
     ("Rob", "Bobbin"): (12, 8, 2)
 }
 
-# TODO здесь писать код
+new_players = list(name + number for name, number in players.items())
+
+print(new_players)
