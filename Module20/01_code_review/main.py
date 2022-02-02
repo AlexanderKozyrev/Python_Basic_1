@@ -30,7 +30,7 @@ def interests(dictionary):
         string += len(info['surname'])
     return lst, string, couples
 
-
+# TODO в именовании переменных не исопользуем list set dict tuple и сокращение этих слов
 my_lst, length, pairs = interests(students)
 
 print('Список пар ID студента - Возраст:', pairs)
