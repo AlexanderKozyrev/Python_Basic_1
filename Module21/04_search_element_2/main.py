@@ -11,6 +11,7 @@ site = {
 	}
 }
 
+
 def find_key(struct, key):
 	if key in struct:
 		return struct[key]
