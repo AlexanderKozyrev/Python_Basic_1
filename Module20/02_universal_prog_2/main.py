@@ -14,6 +14,6 @@ def crypto(text):
             new_text += meaning
     return new_text
 
-# TODO функции не вызываем в принте
+
 print(crypto([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 print(crypto('О Дивный Новый мир!'))
