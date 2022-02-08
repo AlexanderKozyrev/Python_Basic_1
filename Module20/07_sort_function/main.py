@@ -6,5 +6,4 @@ def tpl_sort(numbers):
     return new_sort
 
 
-# TODO функции не вызываем в принте
 print(tpl_sort((6, 3, -1, 8, 4, 10, -5)))
