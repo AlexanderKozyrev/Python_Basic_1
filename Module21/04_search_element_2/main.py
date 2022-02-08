@@ -30,6 +30,7 @@ def find_key(struct, key, max_depth=None, depth=1):
 		result = None
 		return result
 
+#TODO не могу понять где ошибка, функция ищет только в первом заголовке.
 
 user_key = input('Введите искомый ключ: ')
 deep = input('Хотите ввести максимальную глубину? Y/N: ')

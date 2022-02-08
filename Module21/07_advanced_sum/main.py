@@ -1,11 +1,12 @@
-def flatten(a_list):
+def flatten(numbers):
     result = 0
-    for number in a_list:
+    for number in numbers:
         if isinstance(number, int):
             result += number
         else:
             flatten(number)
     return result
+#TODO как сделать чтобы функция складывала весь результат
 
 
 amount = flatten([[1, 2, [3]], [1], 3])
