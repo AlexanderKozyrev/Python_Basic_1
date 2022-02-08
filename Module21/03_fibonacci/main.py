@@ -13,3 +13,5 @@ position = int(input('Введите позицию числа в ряде Фи�
 num_fibonacci = numbers_fibonacci(position)
 
 print(num_fibonacci)
+
+
