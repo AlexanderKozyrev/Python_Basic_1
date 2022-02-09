@@ -3,10 +3,9 @@ def flatten(numbers):
     for number in numbers:
         if isinstance(number, int):
             result += number
-        # тут делаем elif и вставляем
-        #         elif isinstance(i_elem, (list, tuple)):
-        #             for x in i_elem:
-        #                 total_sum += my_sum(x)
+        elif isinstance(number, (list, tuple)):
+            for x in number:
+                result += x
         else:
             flatten(number)
     return result
