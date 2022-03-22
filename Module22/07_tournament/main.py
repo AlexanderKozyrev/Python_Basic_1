@@ -1,1 +1,2 @@
-# TODO здесь писать код
+file = open('first_tour.txt', 'r', encoding='utf=8')
+
