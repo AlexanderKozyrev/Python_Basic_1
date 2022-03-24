@@ -9,9 +9,7 @@ for word in file:
         lenght -= 1
     if lenght < 3:
         raise BaseException('Длина {} строки меньше 3 символов'.format(line_count))
-
     numbers_sumbol += lenght
 
 file.close()
-finally:
-    print('Найденная сумма символовю ', numbers_sumbol)
+print('Найденная сумма символовю ', numbers_sumbol)
