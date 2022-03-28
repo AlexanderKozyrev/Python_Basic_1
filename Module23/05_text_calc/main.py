@@ -1,4 +1,5 @@
 result = 0
+
 with open('calc.txt', 'r') as file:
     for line in file:
         try:
