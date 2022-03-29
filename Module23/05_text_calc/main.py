@@ -4,7 +4,7 @@ with open('calc.txt', 'r') as file:
     for line in file:
         try:
             result += eval(line)
-        except:
+        except MyFirstException:
             if input('Обнаружена ошибка:' + line + 'Хотите исправить?') == 'да':
                 line = input('Введите исправленную строку:')
                 result += eval(line)
