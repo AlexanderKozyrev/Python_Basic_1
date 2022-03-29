@@ -1,3 +1,7 @@
+class MyFirstException(Exception):
+    pass
+
+
 numbers_sumbol = 0
 line_count = 0
 
@@ -9,9 +13,9 @@ for word in file:
         if word.endswith("\n"):
             lenght -= 1
         if lenght < 3:
-            raise BaseException
+            raise MyFirstException
         numbers_sumbol += lenght
-    except BaseException:
+    except MyFirstException:
         print('Длина {} строки меньше 3 символов'.format(line_count))
 
 file.close()
