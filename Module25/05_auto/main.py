@@ -22,4 +22,7 @@ class Bus(Cars):
         self.passengers -= number
         print(f'Из автобуса вышло {number} пассажиров, всего в автобусе {self.passengers} пассажиров')
 
+    def move(self, dist):
+
+
 
