@@ -8,6 +8,8 @@ class Home:
     meal_cat = 30
     dirt = 0
 
+    def __init__(self):
+
     def __str__(self):
         return f'Денег - {self.money}\nЕда - {self.meal}\nЕда Кота - {self.meal_cat}\nГрязь - {self.dirt}\n'
 
