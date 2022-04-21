@@ -20,8 +20,8 @@
 
 ```python
 my_list = LinkedList()
-my_list.append(10)
-my_list.append(20)
+m~~y_list.append(10)
+my_list.~~append(20)
 my_list.append(30)
 print('Текущий список:', my_list)
 print('Получение третьего элемента:', my_list.get(2))
