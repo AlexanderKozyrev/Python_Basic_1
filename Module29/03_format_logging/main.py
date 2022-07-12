@@ -3,6 +3,7 @@ from datetime import datetime
 
 
 def timer(cls, func, date_format):
+    """Функция таймер"""
     def wrapped(*args, **kwargs):
         format = date_format
         for sym in format:
@@ -20,6 +21,7 @@ def timer(cls, func, date_format):
 
 
 def log_methods(date_format):
+    """декоратор, который логирует все методы декорируемого класса (кроме магических методов)"""
     def decorate(cls):
         for method in dir(cls):
             if not method.startswith('__'):

@@ -10,16 +10,13 @@ def check_permission(user_name: str) -> Callable:
     def check_permission_2(func: Callable) -> Callable:
 
         @functools.wraps(func)
-        def wrapped(*args, **kwargs) -> Callable:
-            try:
-                if user_name in user_permissions:
-                    return func(*args, **kwargs)
-                else:
-                    raise PermissionError
-            except PermissionError:
-                print('PermissionError: У пользователя недостаточно прав, чтобы выполнить функцию {func_name}'.format(
-                    func_name=func.__name__))
-            return wrapped
+        def wrapped_check(*args, **kwargs):
+            if permission not in user_permissions:
+                raise ValueError("У пользователя недостаточно прав, "
+                                 "чтобы выполнить функцию {func}".format(
+                    func=func.__name__)
+                )
+            return func(*args, **kwargs)
 
         return check_permission_2
 
