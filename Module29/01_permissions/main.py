@@ -1,22 +1,23 @@
 import functools
 from typing import Callable
 
+user_permissions = ['admin']
 
-def check_permission(user_name: str) -> Callable:
+
+def check_permission(user_name: str):
     """Декоратор для проверки прав пользователя.
     Возвращает ошибку или право доступа к функции"""
-    user_permissions = ['admin']
 
-    def check_permission_2(func: Callable) -> Callable:
+    def check_permission_2(func: Callable):
 
         @functools.wraps(func)
         def wrapped_check(*args, **kwargs):
-            if permission not in user_permissions:
+            if user_name not in user_permissions:
                 raise ValueError("У пользователя недостаточно прав, "
                                  "чтобы выполнить функцию {func}".format(
                     func=func.__name__)
                 )
-            return func(*args, **kwargs)
+            return wrapped_check
 
         return check_permission_2
 
